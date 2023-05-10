@@ -20,7 +20,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" property="og:description" content="This is meta description.">
+  <meta name="description" property="og:description" content="나의 첫 번째 블로그, 내 새 웹사이트를 소개합니다.">
   <meta name="image" property="og:image" content="/">
   <meta name="author" content="Sam Robbins">
   <meta name="generator" content="Hugo 0.92.2" />
@@ -36,8 +36,7 @@
   
   <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
 
-  <link rel="alternate" type="application/rss+xml" href="https://goliot.github.io/blog/index.xml" title="Sumin Cha" />
-<script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.14/dist/mailgo.min.js" defer></script>
 
   <!--Favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -163,68 +162,121 @@
 
 
 
+<style>
+  p {
+    margin: 0
+  }
 
-<section class="uk-margin-large-bottom">
-        <h1 class="uk-heading-large uk-text-center">Blog</h1>
-</section>
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
 
 
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">두 번째 블로그</h1>
+    <p class="uk-text-center uk-text-lead">나의 첫 번째 블로그, 내 새 웹사이트를 소개합니다.</p>
+    <p class="uk-text-center">Published on Apr 30, 2023</p>
+    <p class="uk-text-center">Reading time: 2 minutes.</p>
+    
 
-<section class="uk-margin-large-bottom">
-    <div class="uk-container">
-        <div class="uk-grid-small uk-child-width-1-4@s uk-text-center" uk-grid uk-height-match="target: > div > div > .card-body">
-            
+    <hr class="full-width">
+    
 
-            <div>
-                <div class="uk-card uk-card-default uk-width-1@m">
-                    <div class="card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">Making a new Website</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time
-                                        datetime="2019-12-31 12:14:34 &#43;0600 &#43;0600">Dec 31, 2019</time></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>My first blog, introducing my new website</p>
-                    </div>
-                </div>
-                    <div class="uk-card-footer">
-                        <a href="/blog/first-blog/" class="uk-button uk-button-text">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-
-            <div>
-                <div class="uk-card uk-card-default uk-width-1@m">
-                    <div class="card-body">
-                    <div class="uk-card-header">
-                        <div class="uk-grid-small uk-flex-middle" uk-grid>
-                            <div class="uk-width-expand">
-                                <h3 class="uk-card-title uk-margin-remove-bottom">두 번째 블로그</h3>
-                                <p class="uk-text-meta uk-margin-remove-top"><time
-                                        datetime="2023-04-30 14:14:34 &#43;0600 &#43;0600">Apr 30, 2023</time></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-card-body">
-                        <p>나의 첫 번째 블로그, 내 새 웹사이트를 소개합니다.</p>
-                    </div>
-                </div>
-                    <div class="uk-card-footer">
-                        <a href="/blog/second-blog/" class="uk-button uk-button-text">Read more</a>
-                    </div>
-                </div>
-            </div>
-            
-
-        </div>
+    <div class="content">
+      <p>2023년 1학기 동안에 오픈소스 SW 입문 과목을 수강하면서 웹 개발과 관련된 여러가지 기술들을 배웠다. 그 중 Hugo SSG(Static Site Generation; 정적 사이트 생성기)를 사용하여 정적인 사이트를 만드는 법을 배웠다.</p>
+<p>이 기술들을 활용하여 나의 개인 웹페이지를 만들어 본다. 이 페이지는 다음과 같은 내용들을 포함한다.</p>
+<ul>
+<li>나의 사회관계망 링크</li>
+<li>나의 스킬들</li>
+<li>내 소개 페이지(About)</li>
+<li>내가 진행했던 작업들(Portfolio)</li>
+<li>블로그</li>
+</ul>
+<h3 id="why-hugo">Why Hugo?</h3>
+<p>The first question is why a <em>site builder</em>? I&rsquo;m competent at web development, why not just write it all myself? The markdown processing makes it much easier to just write words, not having to think about the formatting, and if I&rsquo;m going to blog often, then I&rsquo;ll need that.</p>
+<p>Next it gets to why Hugo? why not Jekyll or any of the other vast array of site builders? The answer to that is sadly rather boring, it had a theme I liked the look of, in particular <a href="https://github.com/themefisher/kross-hugo">this theme</a>, and it had an MIT license, so I could publish and tweak it as much as I wanted to.</p>
+<h3 id="why-start-blogging">Why start blogging?</h3>
+<p>A very good question. For one it would allow me to showcase my skills more than just a portfolio would, not everything fits under the umbrella of a portfolio, but I can blog about whatever I want. Secondly is to act as a reminder of how I do things, if I blog my process when I do technical things, I&rsquo;ll always be able to look back and see how I did it if I ever have to do it again.</p>
+<h3 id="so-what-can-i-expect-to-see-in-the-blog">So what can I expect to see in the blog?</h3>
+<p>The current plan is for the vast majority of posts to be technical guides on how to do things, but there might be some variety if I want to blog about events.</p>
 
     </div>
+  </div>
+  </div>
 </section>
+
 
 
     </div>
